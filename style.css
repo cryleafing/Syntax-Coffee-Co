@@ -1,0 +1,144 @@
+/* setting up the color palette variables first */
+:root {
+  --color-lavender: #D1CCDC;
+  --color-slate: #424C55;
+  --color-offwhite: #F5EDF0;
+  --color-mocha: #886F68;
+  --color-espresso: #3D2C2E;
+}
+
+/* basic reset so things don't look weird */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* general body styles */
+body {
+  background-color: var(--color-slate);
+  color: var(--color-offwhite);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+}
+
+/* header styling */
+.site-header {
+  background-color: var(--color-offwhite);
+  color: var(--color-espresso);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  text-transform: uppercase;
+}
+
+/* logo stuff */
+.logo {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.logo-bold {
+  font-weight: 700;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  margin-right: 5px;
+}
+
+.logo-tagline {
+  font-weight: 300;
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+  color: var(--color-slate);
+}
+
+/* social icons spacing */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+/* main wrapper to keep things centered */
+.container {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+/* tertiary read (the small top text) */
+.tertiary-read {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.big-you {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 6rem;
+  color: var(--color-mocha); 
+  line-height: 1;
+}
+
+.sub-italic {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--color-offwhite);
+}
+
+/* primary read (the massive text) */
+.primary-read {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 9rem;
+  line-height: 0.9;
+  letter-spacing: 2px;
+  color: var(--color-offwhite);
+  margin-bottom: 40px;
+}
+
+/* secondary read (the medium text) */
+.secondary-read {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  letter-spacing: 4px;
+  color: var(--color-lavender);
+  margin-bottom: 60px;
+}
+
+/* splitting the bottom content using flexbox */
+.content-split {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+/* styling the hard-to-read paragraph */
+.body-copy {
+  flex: 2; /* gives the paragraph more space */
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  color: var(--color-lavender);
+  text-align: justify;
+}
+
+/* styling the right side callout */
+.callout-box {
+  flex: 1; /* keeps the callout smaller */
+  border-left: 4px solid var(--color-mocha);
+  padding-left: 20px;
+}
+
+.callout-box p {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  line-height: 1.1;
+  color: var(--color-offwhite);
+  letter-spacing: 1px;
+}
