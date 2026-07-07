@@ -16,7 +16,7 @@ This project uses CSS typography properties to establish visual structure. Key t
     * `Bebas Neue`: Primary headings and focal points.
     * `Playfair Display`: Italicised accents.
     * `Inter`: Standard body copy.
-* **Visual Hierarchy:** Using distinct font size variations (ranging from 9rem for hero text down to 0.9rem for body copy) to indicate reading priority.
+* **Visual Hierarchy:** Using distinct font size variations to indicate reading priority.
 * **Weight & Contrast:** Applying heavy font weights for primary text, whilst using lighter weights (300) and muted colour variables for secondary text.
 * **Spacing & Line Height:** Adjusting `letter-spacing` to distribute subheadings, and reducing `line-height` on large text blocks to ensure elements stack well.
 
